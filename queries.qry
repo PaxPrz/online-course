@@ -1,0 +1,16 @@
+/** Sample queries for Online-Course
+*/
+
+query FindCourseByName{
+  description: "Get course by name"
+  statement:
+    SELECT com.pax.onlinecourse.Course
+      WHERE (courseName == _$courseName)
+}
+
+query FindCourseByTeacher{
+  description: "Get course by Teacher"
+  statement:
+    SELECT com.pax.onlinecourse.Course
+      WHERE (teacher.name == _$teacherName)
+}
