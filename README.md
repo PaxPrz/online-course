@@ -146,6 +146,9 @@ eg: skills= ["java", "python"]
 
 In course enter: course=[] //Initialize as empty list
 
-
 Assign Relations through their email id
+
+For rest server, use namespace also: *com.pax.onlinecourse.Teacher#ram@email.com*
+
+For Angular app, if namespace is never used, then use: *ram@email.com*
 
