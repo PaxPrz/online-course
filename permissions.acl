@@ -58,14 +58,6 @@ rule PeopleCanSeeTeachers{
   action: ALLOW
 }
 
-rule TeacherCreateCourseTransaction{
-  description: "Teacher create course"
-  participant: "com.pax.onlinecourse.Teacher"
-  operation: ALL
-  resource: "com.pax.onlinecourse.CreateCourse"
-  action: ALLOW
-}
-
 rule StudentCanBuyCourse{
   description: "Student can create BuyCourse"
   participant: "com.pax.onlinecourse.Student"
